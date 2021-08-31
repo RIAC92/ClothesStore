@@ -1,0 +1,1 @@
+{"color":["rojo","azul","verde","gris","negro"],"tipo":["deportes","casual","formal","noche"],"talla":["S","M","L","XL"]}

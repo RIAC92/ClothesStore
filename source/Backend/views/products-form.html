@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="/javascripts/products-form.js"></script>
+  <link rel="stylesheet" href="/stylesheets/products-form.css">
+</head>
+
+<h1>Formulario de Productos</h1>
+<a href="http://localhost:5000/login/out">cerrar sesion</a>
+<h2>Crear ficha de Productos</h2>
+
+<ul>
+  <li>
+    <span>Codigo de compra</span>
+    <input type="text" class="create-input" name="buy_code" value='AA00' />
+  </li>
+  <li>
+    <span>Codigo de producto del proveedor</span>
+    <input type="text" class="create-input" name="supplier_product_code" value='jh-1235Aaa' />
+  </li>
+  <li>
+    <span>Proveedor ID</span>
+    <input type="text" class="create-input" name="supplier_id" value='60d1a9f0f4661230819770e5' />
+  </li>
+  <li>
+    <span>nombre del producto</span>
+    <input type="text" class="create-input" name="name" value="camisa polo" />
+  </li>
+  <li>
+    <span>descripcion</span>
+    <textarea class="create-input" name="description" cols="50" rows="3">Aqui se puede escribir una descripcion del producto</textarea>
+  </li>
+  <li>
+    <span>marca</span>
+    <input type="text" class="create-input" name="mark" value='nike' />
+  </li>
+  <li>
+    <span>talla</span>
+    <input type="text" class="create-input" name="size" value='L,xL' />
+  </li>
+  <li>
+    <span>Cantidad en almacen</span>
+    <input type="number" class="create-input" name="stock" value='5' />
+  </li>
+  <li>
+    <span>imagenes</span>
+    <input type="text" class="create-input" name="images"
+      value='https://proyecto-riac.000webhostapp.com/images-clothes-store/aa00-1-nike-camisapolo.jpg' />
+  </li>
+  <li>
+    <span>viñetas</span>
+    <input type="text" class="create-input" name="tags" value='rojo' />
+  </li>
+  <li>
+    <span>precio</span>
+    <input type="number" class="create-input" name="price" value='30' />
+  </li>
+  <li>
+    <span>descuento</span>
+    <input type="number" class="create-input" name="discount" value='0' />
+  </li>
+</ul>
+<button type="button" id='create-product-btn'>crear</button>
+
+<hr />
+<h2>Seleccionar un producto</h2>
+<ul>
+  <li>
+    <span>Codigo de compra</span>
+    <input type="text" id="select-buy-code" value='AA00' />
+    <button type="button" id="select-btn">seleccionar</button>
+
+  </li>
+</ul>
+<div id='select-div'></div>
+<button type="button" id="delete-btn">eliminar</button>
+<hr />
+<h2>Agregar/Eliminar imagenes</h2>
+<ul>
+  <li>
+    <span>Agregar img (url)</span>
+    <input type="text" id="add-img-input" name="images"/>
+    <button type="button" id="add-img-btn">Agregar</button>
+  </li>
+  <li>
+    <span>eliminar: img-</span>
+    <input type="number" id="delete-img-input" name="images_n"/>
+    <button type="button" id="delete-img-btn">Eliminar</button>
+  </li>
+</ul>
+<a href="http://localhost:5000/admins/products" target="_blank">Ver todos los Productos</a>
+
+<h2>
+  <a href="http://localhost:5000/admins-menu"> &#60;&#60; Menu de los Administradores</a>
+</h2>
+
+</html>

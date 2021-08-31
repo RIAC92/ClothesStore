@@ -1,0 +1,18 @@
+imagenes
+documentacion 
+#source
+source/clothes
+
+#admins frontend
+source/admin-frontend/admins-build
+source/admin-frontend/node_modules
+source/admin-frontend/.gitignore
+
+#frontend
+source/admin-frontend/build
+source/admin-frontend/node_modules
+source/admin-frontend/.gitignore
+
+#backend
+source/Backend/.env
+source/Backend/node_modules

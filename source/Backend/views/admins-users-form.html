@@ -1,0 +1,53 @@
+<head>
+    <script src="/javascripts/admin-users-form.js"></script>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<h1 class="title">Administrar Usuarios</h1>
+<hr />
+<div class="container">
+    <h2 class="title">Crear Usuario</h2>
+    <div class="form-container">
+        <lu>
+            <li>
+                <label>Nuevo nombre de Usuario</label>
+                <input type="text" class="create-user" name="username" />
+            </li>
+            <li>
+                <label>Nueva constraseña</label>
+                <input type="password" class="create-user" name="password" />
+            </li>
+            <li>
+                <label>Confirmar contraseña </label>
+                <input type="password" class="create-user" name="password_confirm" />
+            </li>
+            <li>
+                <label>Contraseña De Administrador </label>
+                <input type="password" class="create-user" name="admin_password" />
+            </li>
+            <button type="button" id="create-btn">Crear</button>
+        </lu>
+    </div>
+</div>
+
+<hr />
+<div class="container">
+    <h2>Eliminar Usuario</h2>
+    <div class="form-container">
+        <ul>
+            <li>
+                <label>id del usuario </label>
+                <input type="text" class="delete-user" name="id" /><br />
+            </li>
+            <li>
+                <label>Contraseña De Administrador </label>
+                <input type="password" class="delete-user" name="admin_password" />
+            </li>
+            <button type="button" id="delete-btn">Eliminar</button>
+
+        </ul>
+    </div>
+</div>
+<hr />
+<h2>
+    <a href="http://localhost:5000/login/" class="title">Regresar</a>
+</h2>

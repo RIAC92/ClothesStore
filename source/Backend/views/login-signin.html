@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+  </head>
+<h1 class="title">Identificarse</h1>
+<hr/>
+<div class="container">
+<h2 class="title">Iniciar Sesión</h2>
+<div class="form-container">
+    <form action="http://localhost:5000/login/" method="POST">
+        <ul>
+       
+            <li>
+                <label for="username">Usuario</label>
+                <input type="text" id='username' name="username" required='true'>
+            </li>
+            <li>
+                <label for="password">Contraseña</label>
+                <input type="password" id='password' name="password" required='true'>
+            </li>
+        </ul>
+        <button type="submit" >Acceder</button>
+    </form>
+    
+</div>
+</div>
+
+<h2>
+<a href="http://localhost:5000/admins-users/" class="title">Administar Usuario</a><br/>
+</h2>

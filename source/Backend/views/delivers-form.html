@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/javascripts/delivers-form.js"></script>
+
+</head>
+<h1>Formulario de Repartidores</h1>
+<a href="http://localhost:5000/login/out">cerrar sesion</a>
+<h2>Agregar Repartidores</h2>
+<div>
+    <ul>
+        <li>
+            <label for="company">Compañia:</label>
+            <input type="text" class="add-deliver-input" name="company" />
+        </li>
+        <li>
+            <label for="country">Pais</label>
+            <input type="text" class="add-deliver-input" name="country" />
+        </li>
+    </ul>
+
+    <button id="add-deliver-btn">Agregar</button>
+</div>
+<hr />
+
+<h2>Seleccionar Repartidor por ID</h2>
+<label for="select-id-input">ID de compañia</label>
+<input type="text" id="select-id-input" name="id" />
+<button id="select-deliver-btn" type="button">seleccionar</button>
+<ul id="general"></ul>
+<p>Contactos:</p>
+<div id="contacts"></div>
+<button id="delete-deliver" type="button">eliminar</button>
+<hr />
+
+<h2>Agregar Contactos de repartidor</h2>
+<div>
+    <ul>
+        <li>
+            <label>Compañia ID:</label>
+            <b class="company-id"></b>
+        </li>
+        <li>
+            <label for="add-name">Nombre de contacto:</label>
+            <input type="text" class="add-contact-input" id="add-name" name="name" />
+        </li>
+        <li>
+            <label for="add-charge">cargo</label>
+            <input type="text" class="add-contact-input" id="add-charge" name="charge" />
+        </li>
+        <li>
+            <label for="add-phone">Telefono</label>
+            <input type="text" class="add-contact-input" id="add-phone" name="phone" />
+        </li>
+        <li>
+            <label for="add-email">email</label>
+            <input type="email" class="add-contact-input" id="add-email" name="email" />
+        </li>
+    </ul>
+    <button id='add-contact-btn' type="button">Agregar Contacto</button>
+</div>
+<hr />
+
+<h2>Eliminar Contacto</h2>
+<ul>
+  <li>
+    <label>Compañia ID:</label>
+    <b class="company-id"></b>
+  </li>
+  <li>
+    <label for="delete-id">ContactoID</label>
+    <input type="text" id="delete-id" name="contact_id" />
+    <button id='delete-contact-btn' type="button">Eliminar Contacto</button>
+  </li>
+</ul>
+<hr />
+
+<h2>Editar Contacto</h2>
+<div>
+  <ul>
+    <li>
+      <label>Compañia ID:</label>
+      <b class="company-id"></b>
+    </li>
+    <li>
+      <label for="edit-id">contacto id:</label>
+      <input type="text" id="edit-id" name="contact_id" />
+    </li>
+    <li>
+      <label for="edit-name">Nombre de contacto:</label>
+      <input type="text" class="edit-in" id="edit-name" name="name" />
+    </li>
+    <li>
+      <label for="edit-charge">cargo</label>
+      <input type="text" class="edit-in" id="edit-charge" name="charge" />
+    </li>
+    <li>
+      <label for="edit-phone">Telefono</label>
+      <input type="text" class="edit-in" id="edit-phone" name="phone" />
+    </li>
+    <li>
+      <label for="edit-email">email</label>
+      <input type="email" class="edit-in" id="edit-email" name="email" />
+    </li>
+  </ul>
+  <button id='edit-contact-btn' type="button">Guardar cambios</button>
+</div>
+
+<hr/>
+
+<a href="http://localhost:5000/admins/delivers" target="_blank">Ver todos los Repartidores</a>
+
+<h2>
+    <a href="http://localhost:5000/admins-menu"> &#60;&#60; Menu de los Administradores</a>
+</h2>
+
+
+
+</html>
